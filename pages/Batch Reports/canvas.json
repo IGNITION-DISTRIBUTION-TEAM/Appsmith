@@ -542,7 +542,7 @@
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
                       "datePickerType": "DATE_PICKER",
-                      "label": "Label",
+                      "label": "Max Date",
                       "version": 2,
                       "parentId": "ebwx82b4as",
                       "labelAlignment": "left",
@@ -611,7 +611,7 @@
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
                       "datePickerType": "DATE_PICKER",
-                      "label": "Label",
+                      "label": "Min Date",
                       "version": 2,
                       "parentId": "ebwx82b4as",
                       "labelAlignment": "left",
@@ -631,7 +631,7 @@
                       "isFilterable": true,
                       "displayName": "Select",
                       "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-                      "labelText": "Label",
+                      "labelText": "Campaign",
                       "searchTags": [
                         "dropdown"
                       ],
@@ -666,7 +666,7 @@
                         }
                       ],
                       "labelPosition": "Top",
-                      "options": "{{SelectLogQuery.data.map((row) => { \n      return { label: row.CAMPAIGNID, value: row.CAMPAIGNID } \n   }) \n}}",
+                      "options": "{{SelectLogQuery.data.map((row) => { \n      return { label: row.CAMPAIGNNAME, value: row.CAMPAIGNID } \n   }) \n}}",
                       "placeholderText": "Select option",
                       "isDisabled": false,
                       "key": "pp6oamyilp",

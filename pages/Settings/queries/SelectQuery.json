@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT * \nfrom DATAWAREHOUSE.DISTRIBUTION_DATA_APPLICATION.TM_API_CAMPAIGNAUTOMATION ",
+      "body": "SELECT a.*,upper(Title) as Campaignname\nfrom DATAWAREHOUSE.DISTRIBUTION_DATA_APPLICATION.TM_API_CAMPAIGNAUTOMATION a\njoin  DATAWAREHOUSE.SILVERSURFER_CAMP.CAMPAIGN c\non a.CAMPAIGNID = c.CAMPAIGNID",
       "selfReferencingDataPaths": []
     },
     "executeOnLoad": true,
